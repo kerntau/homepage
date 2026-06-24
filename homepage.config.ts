@@ -10,7 +10,7 @@ const author = {
 }
 
 const homepageConfig = {
-	title: 'kerntau (@cotovo)',
+	title: '序栈 (@cotovo)',
 	subtitle: '知行合一，缄默前行。',
 	description: 'kerntau 的个人主页，聚焦网络安全、底层原理与全栈架构实践。这里连接博客「序栈」与知识库内容，记录技术学习、开发实践与工程思考。',
 	author,
@@ -19,6 +19,7 @@ const homepageConfig = {
 	favicon: '/logo.png',
 	url: 'https://blog.cot.wiki/',
 	blogAtom: 'https://blog.cot.wiki/feed.xml',
+	icp: '鄂ICP备2025157857号',
 }
 
 // https://nitro.build/config#routerules

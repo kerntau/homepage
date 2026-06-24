@@ -38,21 +38,20 @@ const appConfig = useAppConfig()
 
 	<ZField label="介绍">
 		<p>你好，我是 <strong>kerntau</strong>，一名即将毕业的信息安全专业学生。</p>
-		<p>这里主要记录我的网络安全学习心得、开发实践经历与技术笔记，也连接着我的博客、知识库与个人项目。</p>
-		<p>除了信息安全领域的渗透测试与网络基础，我也热衷于 Web 开发，熟悉 C 与 Python，目前主要使用 React 和 Nuxt 等框架构建现代化 Web 应用。</p>
+		<p>这里主要记录我的网络安全学习心得，连接着我的博客、知识库与个人项目。</p>
 	</ZField>
 
 	<ZField label="近期活动">
 		<p><strong>2026 年 4 月 - 至今</strong> · 在完成一件事。</p>
-		<p><strong>2026 年 3 月</strong> · 使用 Nuxt 4 重构个人主站。</p>
-		<p><strong>2026 年 2 月</strong> · 使用 React / Next.js 重构 <ZLink to="https://blog.cot.wiki/">个人博客</ZLink>。</p>
+		<p><strong>2026 年 3 月</strong> · 使用 Nuxt 4 重构<ZLink to="/">个人主站</ZLink>。</p>
+		<p><strong>2026 年 2 月</strong> · 使用 React / Next.js 重构<ZLink to="https://blog.cot.wiki/">个人博客</ZLink>。</p>
 	</ZField>
 
 	<ZField label="关于主页">
 		<p>
-			这个主页直接基于开源项目
+			本主页基于
 			<ZLink to="https://github.com/L33Z22L11/homepage-v5" icon="ri:github-line">L33Z22L11/homepage-v5</ZLink>
-			改造，并按我的博客资料进行了替换。
+			搭建，感谢原作者的开源贡献。
 		</p>
 		<p>
 			博客开发也受到开源社区启发，特别感谢以下项目与作者：<br>

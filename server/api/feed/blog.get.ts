@@ -19,6 +19,15 @@ function toIsoDate(value: string | undefined): string | undefined {
 	return Number.isNaN(date.getTime()) ? value : date.toISOString()
 }
 
+const excludeUrls = [
+	'https://blog.cot.wiki/blog/en/coet-architecture',
+	'https://blog.cot.wiki/blog/coet-architecture',
+]
+
+function filterEntries(entries: any[]) {
+	return entries.filter(item => !excludeUrls.includes(item.link?.$href ?? item.link))
+}
+
 export default defineCachedEventHandler(async (_event) => {
 	try {
 		const parser = new XMLParser({
@@ -34,12 +43,12 @@ export default defineCachedEventHandler(async (_event) => {
 		const parsed = parser.parse(xml)
 
 		if (parsed.feed?.entry?.length) {
-			return parsed.feed.entry
+			return filterEntries(parsed.feed.entry)
 		}
 
 		const rssItems = toArray(parsed.rss?.channel?.item)
 		if (rssItems.length) {
-			return rssItems.map((item: any) => ({
+			const mapped = rssItems.map((item: any) => ({
 				title: item.title,
 				link: { $href: item.link },
 				id: item.guid ?? item.link,
@@ -51,6 +60,7 @@ export default defineCachedEventHandler(async (_event) => {
 					$scheme: '',
 				})),
 			}))
+			return filterEntries(mapped)
 		}
 
 		return fallbackBlogFeed
