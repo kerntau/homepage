@@ -1,6 +1,0 @@
-{
-  "name": "kerntau",
-  "description": "kerntau 个人系统 (V5.0 终极细节版) - 探索全栈开发、系统安全与 AI 辅助开发的极简主义时空。",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}

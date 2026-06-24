@@ -1,31 +1,45 @@
 {
-  "name": "react-example",
-  "private": true,
-  "version": "0.0.0",
+  "name": "cotovo-homepage",
   "type": "module",
+  "version": "4.6.0",
+  "private": true,
+  "packageManager": "pnpm@10.33.0",
+  "homepage": "https://github.com/cotovo/homepage",
   "scripts": {
-    "dev": "vite --port=3000 --host=0.0.0.0",
-    "build": "vite build",
-    "preview": "vite preview",
-    "clean": "rm -rf dist server.js",
-    "lint": "tsc --noEmit"
+    "postinstall": "nuxt prepare",
+    "dev": "nuxt dev --open",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
   },
   "dependencies": {
-    "gsap": "^3.15.0",
-    "lucide-react": "^0.546.0",
-    "motion": "^12.23.24",
-    "react": "^19.0.1",
-    "react-dom": "^19.0.1",
-    "three": "^0.184.0"
+    "@nuxt/icon": "catalog:ui",
+    "@nuxt/image": "catalog:ui",
+    "@nuxtjs/color-mode": "catalog:ui",
+    "@nuxtjs/seo": "catalog:util",
+    "@pinia/nuxt": "catalog:util",
+    "@vueuse/core": "catalog:util",
+    "@vueuse/nuxt": "catalog:util",
+    "embla-carousel-autoplay": "catalog:ui",
+    "embla-carousel-vue": "catalog:ui",
+    "embla-carousel-wheel-gestures": "catalog:ui",
+    "fast-xml-parser": "catalog:util",
+    "nuxt": "catalog:framework",
+    "pinia": "catalog:framework",
+    "temporal-polyfill": "catalog:util",
+    "vue": "catalog:framework",
+    "vue-router": "catalog:framework",
+    "vue-tippy": "catalog:ui"
   },
   "devDependencies": {
-    "@tailwindcss/vite": "^4.1.14",
-    "@types/react": "^19.2.17",
-    "@types/react-dom": "^19.2.3",
-    "@types/three": "^0.184.1",
-    "@vitejs/plugin-react": "^5.0.4",
-    "tailwindcss": "^4.1.14",
-    "typescript": "~5.8.2",
-    "vite": "^6.2.3"
+    "@antfu/eslint-config": "catalog:quality",
+    "@iconify-json/ri": "^1.2.9",
+    "@zinkawaii/stylelint-config": "catalog:quality",
+    "eslint": "catalog:quality",
+    "sass-embedded": "catalog:framework",
+    "stylelint": "catalog:quality",
+    "typescript": "catalog:framework"
   }
 }

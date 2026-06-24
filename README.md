@@ -1,36 +1,41 @@
-# kerntau Homepage
+# kerntau 的个人主页
 
-个人主页 / Portfolio — V5.0
+当前主页直接使用 [L33Z22L11/homepage-v5](https://github.com/L33Z22L11/homepage-v5) 这套开源 Nuxt 主页作为基础，并替换为 kerntau / cotovo 的个人信息、博客入口与项目内容。
 
-## 技术栈
+## 快速开始
 
-- React 19 + TypeScript 5.8
-- Three.js — 3D 中国地图交互
-- GSAP + Framer Motion — 动效
-- Tailwind CSS 4
-- Vite 6
+### 安装依赖
 
-## 页面结构
-
-| 页 | 名称 | 内容 |
-|---|------|------|
-| 1 | Vision | 头像、实时钟、轨道环动画、个人简介 |
-| 2 | Trajectory | 个人宣言 + 3D 地图 / 技术栈展示（标签页切换） |
-| 3 | Access | 博客、GitHub、邮箱（磁吸悬停效果） |
-
-## 本地运行
-
-```bash
-npm install
-npm run dev
+```sh
+pnpm i
 ```
 
-访问 `http://localhost:3000`
+### 运行开发环境
 
-## 构建
-
-```bash
-npm run build
+```sh
+pnpm dev
 ```
 
-产物输出至 `dist/`。
+### 构建生产环境
+
+```sh
+pnpm generate
+pnpm preview
+```
+
+### 部署指南
+
+推荐使用 Vercel 进行部署，同时也支持 Netlify、Cloudflare Pages 等平台。建议采用静态（SSG）部署方式，也可直接使用“Nuxt 预设”部署。我的部署配置如下：
+
+- 构建命令: `pnpm generate`
+- 输出目录: `dist`
+- 安装命令: `pnpm i`
+
+## 贡献
+
+欢迎参与项目：如果有具体问题或功能建议，可以发起 Issue；如果愿意在已确定的方向上增加功能或修复问题，可以提交 Pull Request。
+
+## 许可证
+
+- 项目本体：[MIT](LICENSE)
+- 上游模板版权与署名请遵守原仓库约定。
