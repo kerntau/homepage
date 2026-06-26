@@ -44,7 +44,6 @@ const appConfig = useAppConfig()
 	<ZField label="近期活动">
 		<p><strong>2026 年 4 月 - 至今</strong> · 在完成一件事。</p>
 		<p><strong>2026 年 3 月</strong> · 使用 Nuxt 4 重构<ZLink to="/">个人主站</ZLink>。</p>
-		<p><strong>2026 年 2 月</strong> · 使用 React / Next.js 重构<ZLink to="https://blog.cot.wiki/">个人博客</ZLink>。</p>
 	</ZField>
 
 	<ZField label="关于主页">
