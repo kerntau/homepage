@@ -28,25 +28,6 @@ export default defineAppConfig({
 		]),
 		],
 
-	// 用于在主页展示下游引用
-	fork: [
-		{
-			img: 'https://github.com/L33Z22L11.png',
-			link: 'https://github.com/L33Z22L11/homepage-v5',
-			text: 'homepage-v5',
-		},
-		{
-			img: 'https://github.com/lxchapu.png',
-			link: 'https://github.com/lxchapu/astro-gyoza',
-			text: 'astro-gyoza',
-		},
-		{
-			img: 'https://github.com/innei.png',
-			link: 'https://github.com/innei/Shiro',
-			text: 'Shiro',
-		},
-	],
-
 	nav: [
 		{
 			title: '',
@@ -64,7 +45,7 @@ export default defineAppConfig({
 				{ icon: 'ri:mail-line', text: 'cotovo@163.com', url: 'mailto:cotovo@163.com' },
 				{ icon: 'ri:github-line', text: 'GitHub', url: 'https://github.com/cotovo' },
 				{ icon: 'ri:bilibili-line', text: 'Bilibili', url: 'https://space.bilibili.com/9655855' },
-				{ icon: 'ri:music-2-line', text: 'Douyin', url: 'https://v.douyin.com/HWMgjLaTtFk' },
+				{ icon: 'ri:tiktok-fill', text: 'Douyin', url: 'https://v.douyin.com/HWMgjLaTtFk' },
 			],
 		},
 	] satisfies Nav,

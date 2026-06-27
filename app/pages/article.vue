@@ -33,7 +33,7 @@ const articles = computed(() => (data.value ?? []).slice(0, 11))
 		<Icon name="ri:information-line" />
 		<span>关于</span>
 	</ZRawLink>
-	<ZRawLink to="https://blog.cot.wiki/blog">
+	<ZRawLink to="https://blog.cot.wiki/archive/">
 		<Icon name="ri:archive-line" />
 		<span>归档</span>
 	</ZRawLink>
