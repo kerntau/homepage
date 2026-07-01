@@ -13,6 +13,11 @@ const projects = [
 		github: 'cotovo/homepage',
 		description: '当前个人主页仓库，基于 Nuxt 的开源主页模板改造，用于承接个人简介、项目索引与博客入口。',
 	},
+	{
+		title: 'Space',
+		github: 'cotovo/Space',
+		description: '个人空间，纯黑白极简设计，衬线/无衬线字体对比，大量留白。',
+	},
 ]
 </script>
 
