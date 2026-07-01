@@ -13,11 +13,6 @@ const projects = [
 		github: 'cotovo/homepage',
 		description: '当前个人主页仓库，基于 Nuxt 的开源主页模板改造，用于承接个人简介、项目索引与博客入口。',
 	},
-	{
-		title: 'homepage-v5',
-		github: 'L33Z22L11/homepage-v5',
-		description: '本主页直接使用的上游开源模板，保留原有交互结构并替换为我自己的资料。',
-	},
 ]
 </script>
 
