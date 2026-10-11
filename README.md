@@ -1,41 +1,43 @@
-# kerntau 的个人主页
+# kerntau 个人主页
 
-当前主页直接使用 [L33Z22L11/homepage-v5](https://github.com/L33Z22L11/homepage-v5) 这套开源 Nuxt 主页作为基础，并替换为 kerntau / cotovo 的个人信息、博客入口与项目内容。
+这是一个基于 Nuxt 4 的个人主页项目，整合个人介绍、项目展示、博客入口和站点导航。项目源自 Nuxt 个人主页模板，页面内容与配置已按 kerntau / cotovo 的资料调整。
 
-## 快速开始
+## 技术栈
 
-### 安装依赖
+- Nuxt 4、Vue 3、Vue Router 5
+- Pinia、VueUse
+- Nuxt Image、Nuxt Icon、Nuxt SEO
+- Sass、Embla Carousel、Vue Tippy
+- pnpm workspace（Node.js 版本需满足 Nuxt 4 要求）
 
-```sh
-pnpm i
-```
+## 本地开发
 
-### 运行开发环境
+需要 Node.js 20+ 与 pnpm 10（仓库声明 pnpm@10.33.0）。
 
-```sh
-pnpm dev
-```
+    pnpm install
+    pnpm dev
+    # 默认打开 http://localhost:3000
 
-### 构建生产环境
+## 构建与部署
 
-```sh
-pnpm generate
-pnpm preview
-```
+    pnpm build
+    pnpm preview
+    pnpm generate
 
-### 部署指南
+pnpm generate 的输出目录为 dist/，可部署到 Vercel、Netlify、Cloudflare Pages 等 Nuxt 静态托管环境。请在部署平台配置站点域名和 SEO 环境变量；仓库未固定线上主页地址。
 
-推荐使用 Vercel 进行部署，同时也支持 Netlify、Cloudflare Pages 等平台。建议采用静态（SSG）部署方式，也可直接使用“Nuxt 预设”部署。我的部署配置如下：
+## 目录
 
-- 构建命令: `pnpm generate`
-- 输出目录: `dist`
-- 安装命令: `pnpm i`
+    app/                 # Nuxt 页面、布局与路由
+    components/          # 可复用 UI 组件
+    public/              # 静态资源
+    server/              # 服务端接口（如有）
+    nuxt.config.ts       # Nuxt 配置
+    homepage.config.ts   # 主页内容配置
 
-## 贡献
+## 代码质量
 
-欢迎参与项目：如果有具体问题或功能建议，可以发起 Issue；如果愿意在已确定的方向上增加功能或修复问题，可以提交 Pull Request。
+    pnpm lint
+    pnpm lint --fix
 
-## 许可证
-
-- 项目本体：[MIT](LICENSE)
-- 上游模板版权与署名请遵守原仓库约定。
+项目本体与上游模板的版权和署名要求请一并遵守。
