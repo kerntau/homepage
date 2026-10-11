@@ -1,43 +1,86 @@
-# kerntau 个人主页
+<div align="center">
 
-这是一个基于 Nuxt 4 的个人主页项目，整合个人介绍、项目展示、博客入口和站点导航。项目源自 Nuxt 个人主页模板，页面内容与配置已按 kerntau / cotovo 的资料调整。
+# kerntau 个人主页 · Homepage
 
-## 技术栈
+**基于 Nuxt 4 的个人主页与项目导航**<br>
+*A Nuxt 4 personal homepage for projects, writing and links*
 
-- Nuxt 4、Vue 3、Vue Router 5
-- Pinia、VueUse
-- Nuxt Image、Nuxt Icon、Nuxt SEO
-- Sass、Embla Carousel、Vue Tippy
-- pnpm workspace（Node.js 版本需满足 Nuxt 4 要求）
+[![Status](https://img.shields.io/badge/Status-Active-2ea44f?style=for-the-badge)](https://github.com/kerntau/homepage)
+[![Nuxt](https://img.shields.io/badge/Nuxt-4-00DC82?style=for-the-badge&logo=nuxt.js&logoColor=white)](https://github.com/kerntau/homepage)
+[![Vue](https://img.shields.io/badge/Vue-3-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white)](https://github.com/kerntau/homepage)
+[![pnpm](https://img.shields.io/badge/pnpm-10-F69220?style=for-the-badge&logo=pnpm&logoColor=white)](https://github.com/kerntau/homepage)
 
-## 本地开发
+</div>
 
-需要 Node.js 20+ 与 pnpm 10（仓库声明 pnpm@10.33.0）。
+---
 
-    pnpm install
-    pnpm dev
-    # 默认打开 http://localhost:3000
+## 01. 项目定位 // POSITIONING
 
-## 构建与部署
+这是一个基于 Nuxt 4 的个人主页项目，集中展示个人介绍、项目、博客入口和站点导航。页面内容与配置按 kerntau / cotovo 的资料维护，适合 Node 服务或静态生成部署。
 
-    pnpm build
-    pnpm preview
-    pnpm generate
+## 02. 功能与边界 // SCOPE
 
-pnpm generate 的输出目录为 dist/，可部署到 Vercel、Netlify、Cloudflare Pages 等 Nuxt 静态托管环境。请在部署平台配置站点域名和 SEO 环境变量；仓库未固定线上主页地址。
+- Nuxt 页面、布局和路由。
+- Pinia / VueUse 状态与交互工具。
+- Nuxt Image、Nuxt Icon、Nuxt SEO。
+- Embla Carousel、Vue Tippy 等交互模块。
+- 项目本身不提供博客 CMS、账号系统或固定线上主页地址。
 
-## 目录
+## 03. 技术矩阵 // TECHNICAL MATRIX
 
-    app/                 # Nuxt 页面、布局与路由
-    components/          # 可复用 UI 组件
-    public/              # 静态资源
-    server/              # 服务端接口（如有）
-    nuxt.config.ts       # Nuxt 配置
-    homepage.config.ts   # 主页内容配置
+| 层级 | 技术 | 责任 |
+| --- | --- | --- |
+| 应用 | Nuxt 4、Vue 3、Vue Router 5 | 页面、布局和路由 |
+| 状态 | Pinia、VueUse | 交互与状态 |
+| 内容与媒体 | Nuxt Image、Nuxt Icon | 图片和图标 |
+| SEO | Nuxt SEO | metadata 与分享信息 |
+| 构建 | pnpm 10、Sass | 开发、构建和静态生成 |
 
-## 代码质量
+## 04. 目录拓扑 // REPOSITORY TOPOLOGY
 
-    pnpm lint
-    pnpm lint --fix
+~~~text
+.
+├── app/                    # Nuxt 页面、布局与路由
+├── components/             # 可复用 UI 组件
+├── public/                 # 静态资源
+├── server/                 # 服务端接口（如有）
+├── homepage.config.ts      # 主页内容配置
+├── nuxt.config.ts          # Nuxt 配置
+└── package.json
+~~~
 
-项目本体与上游模板的版权和署名要求请一并遵守。
+## 05. 快速开始 // QUICK START
+
+环境要求：Node.js 20+、pnpm 10（packageManager 为 pnpm@10.33.0）。
+
+~~~bash
+pnpm install
+pnpm dev
+# 默认打开 http://localhost:3000
+~~~
+
+## 06. 部署与验证 // DEPLOYMENT & VALIDATION
+
+~~~bash
+pnpm lint
+pnpm build
+pnpm preview
+pnpm generate
+~~~
+
+build / preview 适合 Nuxt 生产服务，generate 生成 dist/ 静态文件。部署前请检查主页配置、导航、图片资源和 SEO metadata；仓库没有固定线上主页地址。
+
+## 07. 内容契约 // CONTENT CONTRACT
+
+主页资料、项目链接和文章入口应在配置文件中维护。不要把私密联系方式、访问令牌或未公开文章写入 public/；修改导航后请同时检查桌面端和移动端。
+
+## 08. 路线图 // ROADMAP
+
+- [x] Nuxt 4 主页、项目展示和导航
+- [x] 图片、图标、SEO 与响应式布局
+- [ ] 持续完善内容配置和社交分享预览
+- [ ] 增加可选的文章聚合和站点数据校验
+
+## 09. 许可证 // LICENSE
+
+仓库当前未附带 LICENSE 文件。使用或再分发前，请先补充许可证并同步更新本节。
